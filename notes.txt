@@ -1,0 +1,21 @@
+Primitives in JS:
+-String
+-Number
+-Boolean
+
+Data types in JS:
+- String 
+- Number
+- Boolean
+- Bigint
+- Object
+- Null
+- Symbol
+- Undefined 
+
+Casting
+Number(string)
+
+Type coercion
+"20"/"10" = 2
+"20" / "len" = NaN
