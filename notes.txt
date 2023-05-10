@@ -19,3 +19,21 @@ Number(string)
 Type coercion
 "20"/"10" = 2
 "20" / "len" = NaN
+
+Method is a function that belongs to a particular class
+
+Types of Functions
+1. Return output
+2. Perform operations without Returning output
+
+Function expression(call a function in line )
+Define a function in an expression and assign it to a variable. You can only call the function after you've defined it
+let sum = function(num){
+    console.log(num+10);
+}
+sum(34)
+
+Arrow function have an implicit return i.e. if you do not use the curly braces normally used in functions
+it automatically return the last line without you needing to use return statement. 
+if you use curly braces the arrow function behaves like normal function. 
+Arrow functions are normally used to write callback functions and anonymous functions
