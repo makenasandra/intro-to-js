@@ -1,0 +1,29 @@
+Write a function in JavaScript that takes an object as a parameter and returns the number of properties present in the object and all its nested objects.
+
+Create a constructor function called Person that represents a person. It should have properties like name, age, and gender.
+
+Explain the concept of prototype in JavaScript and how it is related to constructor functions.
+
+Write a JavaScript function that takes an object as a parameter and checks if all the properties in the object are of type string.
+
+Create a nested object called university that contains properties like name, location, and an object departments that further contains different department names.
+
+What is object destructuring in JavaScript? Provide an example to illustrate object destructuring.
+
+Explain the concept of object cloning in JavaScript and provide different methods to achieve it.
+
+Create a constructor function called Circle that represents a circle. It should have properties like radius and methods like getArea and getCircumference.
+
+Write a JavaScript function that takes an object as a parameter and returns an array of all the values present in the object and its nested objects.
+
+What is the difference between Object.keys() and Object.values() in JavaScript?
+
+Explain the concept of encapsulation in JavaScript and how it can be achieved using objects.
+
+Create an object called Playlist that keeps track of songs. It should have methods like addSong, removeSong, and getSongCount.
+
+Write a JavaScript function that takes an object as a parameter and checks if any of the properties in the object are arrays.
+
+Create a constructor function called BankAccount that represents a bank account. It should have properties like accountNumber, balance, and methods like deposit and withdraw.
+
+Explain the concept of object composition in JavaScript and how it can be used to build complex objects from smaller, reusable parts
