@@ -74,7 +74,7 @@ function getRandomInt(min, max) {
     return Math.random(max)*(max-min)+min;
 }
 
-console.log(getRandomInt(5,20));
+// console.log(getRandomInt(5,20));
 
 // Write a function named isPrime that takes a number as an argument and returns true if the number is prime, and false otherwise.
 
@@ -84,7 +84,7 @@ function calculateAverage(nums){
     return nums.reduce((a, b) => (a + b)) / nums.length;
 }
 
-console.log(calculateAverage([1,2,3,4,5]));
+// console.log(calculateAverage([1,2,3,4,5]));
 
 function average(array){
     
@@ -92,16 +92,56 @@ function average(array){
 
 }
 
-let average = (a, b) => (a + b)
+// let average = (a, b) => (a + b)
 
 // Write a function named getArea that takes two arguments, a width and a height, and returns the area of a rectangle with those dimensions.
+function getArea(width, height) {
+
+    let area = width*height;
+    return area;
+}
+
+// console.log(getArea(16,3));
 
 // Write a function expression named divideNumbers that takes two numbers as arguments and returns their quotient.
+let divideNumbers = function(num1, num2) {
+    return num1/num2;
+    };
 
-// Write a higher-order function named operateOnString that takes a string and a callback function as arguments. The function should use the callback function to transform the string and return the result.
+console.log(divideNumbers(48,3));
+
+// Write a higher-order function named operateOnString that takes a string and a callback function as arguments. 
+//The function should use the callback function to transform the string and return the result.
+function operateOnString(str, callback) {
+    return callback(str);
+}
+
+function divideStr(string) {
+    let stringArr = string.split(" ");
+    let resultStr = stringArr.join(",")
+
+    return resultStr;
+}
+
+let mainString = "Red Green Yellow Orange Blue";
+// console.log(operateOnString(mainString, divideStr));
 
 // Rewrite the divideNumbers function as an arrow function.
+let divideNumbersArrow = (num1, num2) => num1/num2;
 
 // Write a function named double that takes a number as an argument and returns its double.
+let double = num => num*2;
+console.log(double(num));
 
-// Write a function named outerFunction that defines a variable and returns an inner function that references that variable. Call the outer function and assign the inner function to a variable. Call the inner function.
+// Write a function named outerFunction that defines a variable and returns an inner function that 
+//references that variable. Call the outer function and assign the inner function to a variable. 
+//Call the inner function.
+function outerFunction(params) {
+
+    let variable = "this is it";
+
+    return innerFunction(variable);
+} 
+
+outerFunction(innerFunction());
+let someVar;
