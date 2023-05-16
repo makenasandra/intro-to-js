@@ -42,11 +42,12 @@ function printMovieInfo(array) {
 
     for (let index = 0; index < array.length; index++) {
 
-      let isPresent;
+      let isPresent = false;
       
       for (const key in genreCounts) {
         if ( key == array[index].genre) {
           isPresent = true; 
+          break;
         } 
       }
 

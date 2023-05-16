@@ -3,7 +3,7 @@ function printNames(obj){
     for (const key in obj) {
         // console.log(typeof(obj[key]));
         if (typeof obj[key] === "string" && obj[key].length > 5) {
-            newArray.push(obj[key]);
+            newArray.push(key);
         }
     }
     return newArray;

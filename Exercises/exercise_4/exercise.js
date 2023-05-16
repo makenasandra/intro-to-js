@@ -25,3 +25,17 @@ function printBookInfo(array){
 }
 
 console.log(printBookInfo(books));
+
+
+function printBook(objArr){
+    let stringArr = [];
+
+    for (let index = 0; index < objArr.length; index++) {
+        let bookStr = `${objArr[index].title} by ${objArr[index].author}`;
+
+        
+
+        
+    }
+    return stringArr;
+}

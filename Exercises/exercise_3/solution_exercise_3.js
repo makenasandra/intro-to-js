@@ -1,9 +1,9 @@
 const obj = {
-  longStringProperty: 'longStringProperty',
+  longStringProperty: 'longStringPropertynm',
   shortstringProperty: 'ciao',
   booleanProperty: true,
   numberProperty: 10,
-  longStringProperty2: 'longStringProperty2'
+  longStringProperty2: 'longStringPropertynm2'
 }
 
 function longStrings(obj) {

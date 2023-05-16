@@ -136,7 +136,7 @@ console.log(double(num));
 // Write a function named outerFunction that defines a variable and returns an inner function that 
 //references that variable. Call the outer function and assign the inner function to a variable. 
 //Call the inner function.
-function outerFunction(params) {
+function outerFunction() {
 
     let variable = "this is it";
 
@@ -144,4 +144,5 @@ function outerFunction(params) {
 } 
 
 outerFunction(innerFunction());
-let someVar;
+let someVar = innerFunction();
+innerFunction();

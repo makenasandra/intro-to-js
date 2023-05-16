@@ -23,4 +23,4 @@ function primeNumbers(arr) {
 }
 
   
-console.log(primeNumbers(number));
+console.log(primeNumbers(numbers));
