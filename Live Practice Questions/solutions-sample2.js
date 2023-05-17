@@ -1,4 +1,10 @@
 // Create an object car with properties make, model, and year.
+// Add a method start to the car object that logs the message "Starting [make] [model]".
+
+// Add a method drive to the car object that takes a distance parameter and logs the message "Driving [distance] miles".
+
+// Add a method stop to the car object that logs the message "Stopping [make] [model]".
+
 function Car(make, model, year){
     this.make = make;
     this.model = model;
@@ -11,22 +17,16 @@ function Car(make, model, year){
     this.driveCar = (distance) => {
         console.log(`Driving ${distance} miles`)
     };
-    
+
     this.stopCar = ()=> {
         console.log(`Stopping ${this.make} ${this.model}`)
     }
 }
 
 let rolls = new Car("Rolls Royce", "Phatom", 2020);
-rolls.startCar();
-rolls.driveCar(30);
-rolls.stopCar();
-
-// Add a method start to the car object that logs the message "Starting [make] [model]".
-
-// Add a method drive to the car object that takes a distance parameter and logs the message "Driving [distance] miles".
-
-// Add a method stop to the car object that logs the message "Stopping [make] [model]".
+// rolls.startCar();
+// rolls.driveCar(30);
+// rolls.stopCar();
 
 // Create an object person with properties name, age, and gender.
 
@@ -34,11 +34,46 @@ rolls.stopCar();
 
 // Add a method celebrateBirthday to the person object that increments the age property by 1.
 
+function Person(name, age, gender){
+
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    
+    this.greet = () => {
+        console.log(`Hello, my name is ${this.name}.`);
+    };
+
+    this.celebrateBirthday = ()=> { 
+        this.age++;
+    };
+}
+
+let indi = new Person("Janet", 33, "female");
+
+// indi.greet();
+// indi.celebrateBirthday();
+// console.log(indi.age);
+
+
 // Create an object rectangle with properties width and height.
-
 // Add a method getArea to the rectangle object that returns the area of the rectangle (width * height).
-
 // Add a method getPerimeter to the rectangle object that returns the perimeter of the rectangle (2 * (width + height)).
+function Rectangle(width, height){
+
+    this.width = width;
+    this.height = height;
+    
+    this.getArea = () => this.width * this.height
+
+    this.getPerimeter = ()=> (2 * (this.width + this.height))
+}
+
+let rect = new Rectangle(3,5);
+
+console.log(rect.getArea());
+console.log(rect.getPerimeter());
+
 
 // Create an object bankAccount with properties balance and accountNumber.
 
